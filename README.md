@@ -1,5 +1,3 @@
-# AWS EC2 Auto-Stop Non-Prod Instances
-
 This project provides simple Terraform scripts to create EC2 instances and a Python script to automatically stop non-production instances.
 
 ## Prerequisites
