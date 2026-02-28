@@ -1,17 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
-
-provider "aws" {
-  region  = "ap-south-2"
-  profile = "authprofile"
-}
-
 # Define servers using map
 locals {
   servers = {
@@ -29,9 +15,6 @@ resource "aws_instance" "servers" {
   for_each      = local.servers
   ami           = "ami-02774d409be696d81" # Amazon Linux 2 AMI (replace with your region's AMI)
   instance_type = "t3.micro"
-  #key_name      = "myServerKey" # Replace with your .pem file name (without .pem extension)
-  #key_name       = "myServerKey.pem" # Replace with your .pem file name
-
   tags = {
     Name = each.value.name
   }
