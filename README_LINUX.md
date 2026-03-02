@@ -38,14 +38,7 @@ This project provides automated management of AWS EC2 Non-Prod instances on Linu
 │  │ auto_stop_nonprod  │  │
 │  │ .py (manual)       │  │
 │  └────────────────────┘  │
-│  ┌────────────────────┐  │
-│  │ schedule_start_    │  │
-│  │ stop_nonprod.py    │  │
-│  │ (auto-scheduler)   │  │
-│  └────────────────────┘  │
-│  ┌────────────────────┐  │
-│  │ nonprod_scheduler  │  │
-│  │ .log (logs)        │  │
-│  └────────────────────┘  │
+│                          |
 └──────────────────────────┘
 ```
+
