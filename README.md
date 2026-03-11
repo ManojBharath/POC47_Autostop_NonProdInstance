@@ -1,5 +1,6 @@
 This project provides simple Terraform scripts to create EC2 instances and a Python script to automatically stop non-production instances.
 
+
 ## Prerequisites
 
 1. **AWS Account** with appropriate permissions to create/manage EC2 instances
@@ -93,3 +94,4 @@ To run the auto-stop script on a schedule:
 - Ensure your AWS IAM user has permissions for `ec2:DescribeInstances` and `ec2:StopInstances`
 - The script only stops running instances; it won't start them
 - Always test in a non-production environment first
+
