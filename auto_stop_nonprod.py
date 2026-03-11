@@ -1,5 +1,4 @@
 import boto3
-
 REGION = "ap-south-2"
 PROFILE = "authprofile"
 
@@ -80,3 +79,4 @@ def main():
 if __name__ == "__main__":
     main()
     
+
